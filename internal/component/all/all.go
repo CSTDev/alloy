@@ -130,33 +130,35 @@ import (
 	_ "github.com/grafana/alloy/internal/component/prometheus/exporter/oracledb"             // Import prometheus.exporter.oracledb
 	_ "github.com/grafana/alloy/internal/component/prometheus/exporter/postgres"             // Import prometheus.exporter.postgres
 	_ "github.com/grafana/alloy/internal/component/prometheus/exporter/process"              // Import prometheus.exporter.process
-	_ "github.com/grafana/alloy/internal/component/prometheus/exporter/redis"                // Import prometheus.exporter.redis
-	_ "github.com/grafana/alloy/internal/component/prometheus/exporter/self"                 // Import prometheus.exporter.self
-	_ "github.com/grafana/alloy/internal/component/prometheus/exporter/snmp"                 // Import prometheus.exporter.snmp
-	_ "github.com/grafana/alloy/internal/component/prometheus/exporter/snowflake"            // Import prometheus.exporter.snowflake
-	_ "github.com/grafana/alloy/internal/component/prometheus/exporter/squid"                // Import prometheus.exporter.squid
-	_ "github.com/grafana/alloy/internal/component/prometheus/exporter/statsd"               // Import prometheus.exporter.statsd
-	_ "github.com/grafana/alloy/internal/component/prometheus/exporter/unix"                 // Import prometheus.exporter.unix
-	_ "github.com/grafana/alloy/internal/component/prometheus/exporter/windows"              // Import prometheus.exporter.windows
-	_ "github.com/grafana/alloy/internal/component/prometheus/operator/podmonitors"          // Import prometheus.operator.podmonitors
-	_ "github.com/grafana/alloy/internal/component/prometheus/operator/probes"               // Import prometheus.operator.probes
-	_ "github.com/grafana/alloy/internal/component/prometheus/operator/servicemonitors"      // Import prometheus.operator.servicemonitors
-	_ "github.com/grafana/alloy/internal/component/prometheus/receive_http"                  // Import prometheus.receive_http
-	_ "github.com/grafana/alloy/internal/component/prometheus/relabel"                       // Import prometheus.relabel
-	_ "github.com/grafana/alloy/internal/component/prometheus/remotewrite"                   // Import prometheus.remote_write
-	_ "github.com/grafana/alloy/internal/component/prometheus/scrape"                        // Import prometheus.scrape
-	_ "github.com/grafana/alloy/internal/component/prometheus/write/queue"                   // Import prometheus.write.queue
-	_ "github.com/grafana/alloy/internal/component/pyroscope/ebpf"                           // Import pyroscope.ebpf
-	_ "github.com/grafana/alloy/internal/component/pyroscope/java"                           // Import pyroscope.java
-	_ "github.com/grafana/alloy/internal/component/pyroscope/receive_http"                   // Import pyroscope.receive_http
-	_ "github.com/grafana/alloy/internal/component/pyroscope/relabel"                        // Import pyroscope.relabel
-	_ "github.com/grafana/alloy/internal/component/pyroscope/scrape"                         // Import pyroscope.scrape
-	_ "github.com/grafana/alloy/internal/component/pyroscope/write"                          // Import pyroscope.write
-	_ "github.com/grafana/alloy/internal/component/remote/http"                              // Import remote.http
-	_ "github.com/grafana/alloy/internal/component/remote/kubernetes/configmap"              // Import remote.kubernetes.configmap
-	_ "github.com/grafana/alloy/internal/component/remote/kubernetes/secret"                 // Import remote.kubernetes.secret
-	_ "github.com/grafana/alloy/internal/component/remote/s3"                                // Import remote.s3
-	_ "github.com/grafana/alloy/internal/component/remote/vault"                             // Import remote.vault
+
+	_ "github.com/grafana/alloy/internal/component/prometheus/exporter/redis"           // Import prometheus.exporter.redis
+	_ "github.com/grafana/alloy/internal/component/prometheus/exporter/self"            // Import prometheus.exporter.self
+	_ "github.com/grafana/alloy/internal/component/prometheus/exporter/snmp"            // Import prometheus.exporter.snmp
+	_ "github.com/grafana/alloy/internal/component/prometheus/exporter/snowflake"       // Import prometheus.exporter.snowflake
+	_ "github.com/grafana/alloy/internal/component/prometheus/exporter/squid"           // Import prometheus.exporter.squid
+	_ "github.com/grafana/alloy/internal/component/prometheus/exporter/statsd"          // Import prometheus.exporter.statsd
+	_ "github.com/grafana/alloy/internal/component/prometheus/exporter/unix"            // Import prometheus.exporter.unix
+	_ "github.com/grafana/alloy/internal/component/prometheus/exporter/windows"         // Import prometheus.exporter.windows
+	_ "github.com/grafana/alloy/internal/component/prometheus/exporter/x509"            // Import prometheus.exporter.x509
+	_ "github.com/grafana/alloy/internal/component/prometheus/operator/podmonitors"     // Import prometheus.operator.podmonitors
+	_ "github.com/grafana/alloy/internal/component/prometheus/operator/probes"          // Import prometheus.operator.probes
+	_ "github.com/grafana/alloy/internal/component/prometheus/operator/servicemonitors" // Import prometheus.operator.servicemonitors
+	_ "github.com/grafana/alloy/internal/component/prometheus/receive_http"             // Import prometheus.receive_http
+	_ "github.com/grafana/alloy/internal/component/prometheus/relabel"                  // Import prometheus.relabel
+	_ "github.com/grafana/alloy/internal/component/prometheus/remotewrite"              // Import prometheus.remote_write
+	_ "github.com/grafana/alloy/internal/component/prometheus/scrape"                   // Import prometheus.scrape
+	_ "github.com/grafana/alloy/internal/component/prometheus/write/queue"              // Import prometheus.write.queue
+	_ "github.com/grafana/alloy/internal/component/pyroscope/ebpf"                      // Import pyroscope.ebpf
+	_ "github.com/grafana/alloy/internal/component/pyroscope/java"                      // Import pyroscope.java
+	_ "github.com/grafana/alloy/internal/component/pyroscope/receive_http"              // Import pyroscope.receive_http
+	_ "github.com/grafana/alloy/internal/component/pyroscope/relabel"                   // Import pyroscope.relabel
+	_ "github.com/grafana/alloy/internal/component/pyroscope/scrape"                    // Import pyroscope.scrape
+	_ "github.com/grafana/alloy/internal/component/pyroscope/write"                     // Import pyroscope.write
+	_ "github.com/grafana/alloy/internal/component/remote/http"                         // Import remote.http
+	_ "github.com/grafana/alloy/internal/component/remote/kubernetes/configmap"         // Import remote.kubernetes.configmap
+	_ "github.com/grafana/alloy/internal/component/remote/kubernetes/secret"            // Import remote.kubernetes.secret
+	_ "github.com/grafana/alloy/internal/component/remote/s3"                           // Import remote.s3
+	_ "github.com/grafana/alloy/internal/component/remote/vault"                        // Import remote.vault
 
 	_ "github.com/grafana/alloy/internal/util/otelfeaturegatefix" // Gracefully handle duplicate OTEL feature gates
 )
