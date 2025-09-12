@@ -1,3 +1,6 @@
+// package x509 provides a prometheus.exporter x509 certificate component
+// Maintainers for the Grafana Alloy wrapper:
+// - @cstdev
 package x509
 
 import (
@@ -14,7 +17,8 @@ import (
 func init() {
 	component.Register(component.Registration{
 		Name:      "prometheus.exporter.x509",
-		Stability: featuregate.StabilityGenerallyAvailable,
+		Stability: featuregate.StabilityExperimental,
+		Community: true,
 		Args:      Arguments{},
 		Exports:   exporter.Exports{},
 
