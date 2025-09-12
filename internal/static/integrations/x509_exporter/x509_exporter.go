@@ -1,4 +1,4 @@
-package x509exporter
+package x509_exporter
 
 import (
 	"time"
